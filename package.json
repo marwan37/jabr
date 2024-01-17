@@ -4,7 +4,9 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "npx prisma migrate deploy && next build",
+    "db:up": "docker-compose up -d",
+    "db:down": "docker-compose down",
     "start": "next start",
     "lint": "next lint"
   },
