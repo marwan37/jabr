@@ -19,6 +19,11 @@
 # environment
 .env
 
+# local env
+.env*.local
+
+password.txt
+
 # misc
 .DS_Store
 *.pem
